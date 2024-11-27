@@ -1,0 +1,532 @@
+:root {
+	--primary-color: #ff7b47;
+	--secondary-color-1: #0d5c63;
+	--secondary-color-2: #17213c;
+	--text-color: #252b42;
+	--second-text-color: #737373;
+	--light-text-color: #fff;
+	--dark-background-color: #252b42;
+	--light-background-color: #fff;
+	--hover-color: #2a7cc7;
+	--disabled-element-color: #8ec2f2;
+	--muted-color: #bdbdbd;
+	--success-color: #2dc071;
+	--alert-color: #e77c40;
+	--danger-color: #e74040;
+    --font-family: "Montserrat", sans-serif;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+body{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    color: var(--second-text-color);
+}
+.FirstScreen {
+    width: 100%;
+    height: 100vh;
+}
+
+.FirstScreen_image{
+    background-image: url(../img/mainblock/cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right bottom;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: calc(100vh - 100px);
+    z-index: -1;
+}
+.FirstScreen_header {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    height: 104px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 80px;
+}
+.logo {
+    padding: 10px;
+    width: 160px;
+    height: 58px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: var(--text-color);
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.FirstScreen_nav {
+    width: 300px;
+    height: 24px;
+    
+}
+.FirstScreen_nav ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+/* .FirstScreen_Wrapper{
+    width: 1040px;
+    margin: 0 auto;
+    padding: 0 5px;
+} */
+.FirstScreen_text {
+    width: 1040px;
+    margin: 0 auto;
+    padding: 10px 30px;
+    z-index: 5;
+}
+.title {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 138%;
+    letter-spacing: 0em;
+    color: var(--text-color);
+    margin-bottom: 35px;
+}
+.subTitle {
+    width: 380px;
+    font-size: 20px;
+    line-height: 150%;
+    margin-bottom: 35px; 
+}
+.FirstScreen_btn{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+.btnGetQuoteNow {
+    border-radius: 37px;
+    padding: 10px 36px;
+    width: 190px;
+    height: 48px;
+    background: var(--primary-color);
+    color: var(--light-text-color);
+}
+.btnLearnMore {
+    border: 1px solid var(--secondary-color-1);
+    border-radius: 37px;
+    padding: 10px 36px;
+    width: 190px;
+    height: 48px;
+    color: var(--secondary-color-1);
+}
+.FirstScreen_footer{
+    width: 100%;
+    padding-right: 5px;
+    height: 240px; 
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    position: absolute;
+    bottom: 0;
+}
+.FirstScreen_footer_card{
+    margin: 0 1%;
+    padding: 35px 40px;
+    max-width: 310px;
+    height: inherit;
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    background: var(--light-text-color);
+    
+}
+.FirstScreen_footer_card3{
+    box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
+    background: var(--secondary-color-1);
+}
+.FirstScreen_footer_card h3, .SevenScreen_header h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: var(--text-color);
+    margin: 5px 0;
+}
+
+.FirstScreen_footer_card3 h3{
+    color: var(--light-text-color);
+}
+
+.TwoScreen, .ThreeScreen, .FourScreen, .FiveScreen, .SixScreen, .SevenScreen{
+    padding-top: 100px;
+    width: 100%;
+    background: #fafafa;
+}
+.TwoScreen{
+    padding-top: 150px; 
+}
+.FourScreen{
+    background: var(--light-text-color);
+}
+.SixScreen{
+    background: #f3f3f3;
+    padding-top: 80px;
+}
+.SevenScreen{
+    padding-top: 0; 
+}
+.TwoScreen_header, .ThreeScreen_header, .FourScreen_header{
+    margin: 10 auto;
+    padding: 15px ;
+    margin: 0 auto 30px auto;
+}
+.TwoScreen_header h2, .TwoScreen_card h3, .ThreeScreen_header h2, .FourScreen_card_header h3, .FourScreen_header h2, .SixScreen_header h2{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 142%;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+    margin: 0 auto;
+    text-align: center;
+}
+.TwoScreen_header p, .FirstScreen_footer_card p, .ThreeScreen_card p, .ThreeScreen_header p, .FourScreen_card_header p, .FourScreen_header p, .SixScreen_header p, .SevenScreen_header_text p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--second-text-color);
+    margin: 0 auto;
+}
+.FirstScreen_footer_card3 p{
+    color: var(--light-text-color);
+}
+.TwoScreen_cards, .ThreeScreen_cards, .FourScreen_wrapper, .SixScreen_cards, .SevenScreen_main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}   
+
+.TwoScreen_card{
+    padding: 30px 40px;
+    width: 210px;
+    height: 209px;
+    margin: 0 10px;
+    text-align: center;
+    background: var(--light-text-color);    
+}
+.TwoScreen_card img{
+    width: 48px;
+    height: 48px;
+    display: inline;
+    text-align: center;
+    padding: 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.TwoScreen p{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--second-text-color);
+}
+.ThreeScreen_card {
+    width: 250px;
+    background: var(--light-text-color);
+    text-align: center;
+    margin: 5px;
+}
+.ThreeScreen_card_header{
+    width: inherit;
+    height: 120px;
+}
+.ThreeScreen_card h3, .SixScreen_card h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+    text-align: center;
+    padding: 5px;
+}
+
+.ThreeScreen img{
+    width: inherit;
+    height: 138px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.FourScreen_card1{
+    width: 597px;
+    height: 440px;
+    margin: 5px;
+}
+.FourScreen_Video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.FourScreen_card2{
+    width: 333px;
+    height: 440px;
+    margin: 5px;
+    margin-left: 15px;
+}
+.FourScreen_card_header{
+    padding: 20px 0px;
+    width: inherit;
+    height: 224px;
+}
+
+.FourScreen_card_item{
+    border-radius: 9px;
+    width: inherit;
+    height: 77px;
+    margin: 15px;
+}
+.FourScreen_card_item img{
+    float: left;
+    fill: var(--primary-color);
+    margin: 5px;
+}
+.FiveScreen_header {
+    width: 100%;
+    padding: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.FiveScreen_header img{
+    margin: 25px;
+    width: 146px;
+    height: 59px;
+}
+.FiveScreen_footer{
+    width: 100%;
+    height: 62px;
+    background: var(--text-color);
+    position: relative;
+    margin-top: 200px;
+    text-align: center;
+}
+.FiveScreen_footer_email{
+    border-radius: 2px;
+    width: 51%;
+    height: 124px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: var(--light-text-color);
+    background: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    left: 50%;    
+    transform: translateX(-50%); 
+    /* text-align: justify; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    align-items: center;
+}
+.FiveScreen_footer_email label{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0em;
+    color: var(--light-text-color);
+    margin-right: 10px;
+    width: 40%;
+}
+.FiveScreen_email{
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    padding: 19px 25px;
+    height: 58px;
+    background: #f9f9f9;
+    width: 43%;
+    height: 58px;
+}
+.FiveScreen_submit{
+    border: 1px solid #e6e6e6;
+    border-radius: 0 5px 5px 0;
+    width: 9%;
+    height: 58px;
+    background: var(--primary-color);
+    text-align: center;
+}
+.SixScreen_cards{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    margin-top: 80px;
+    padding-bottom: 80px;
+    background: #f3f3f3;
+}
+.SixScreen_card{
+    padding: 50px 40px;
+    width: 328px;
+    height: 333px;
+    background: var(--light-text-color);
+}
+
+.SixScreen_card2 {
+    height: 393px;
+    align-self: baseline;
+    background: var(--text-color);
+}
+.SixScreen_card2 p, .SixScreen_card2 h3{
+    color: var(--light-text-color);
+}
+.btnGetSupport{
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    margin: 20px auto 0 auto;
+    padding: 20px auto 0 auto;
+    width: 160px;
+    height: 44px;
+    text-align: center;
+    align-content: center;
+}
+
+.btnGetSupport2{
+    border: 1px solid var(--light-text-color);
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 160px;
+    height: 44px;
+    color: var(--light-text-color);
+}
+.SixScreen_card img{
+    width: 71px;
+    height: 71px; 
+    display: inline;
+    text-align: center;
+    padding: 0 auto 20px auto;
+    margin: 0 auto 20px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.SixScreen_cardh3{
+    margin: 10px 0;
+}
+.SevenScreen_header, .SevenScreen_footer{
+    width: 1040px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.SevenScreen_header{
+    height: 142px;
+    padding: 40px 0px;
+}
+.SevenScreen_header_text{
+    width: 50%;
+}
+.SevenScreen_header_text p, .SevenScreen_header_text h3, .SevenScreen_footer p{
+    text-align: left;
+}
+.SevenScreen_header_btn{
+    border-radius: 5px;
+    padding: 20px 40px;
+    width: 160px;
+    height: 100%;
+    background: var(--primary-color);
+    text-align: center;
+}
+.SevenScreen_main{
+    width: 100%;
+    margin: 0 auto;
+    background: var(--secondary-color-2);
+}
+.SevenScreen_wrapper{
+    margin: 50px auto;
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.sevenScreen_section{
+    max-width: 148px;
+}
+.sevenScreen_section5{
+    width: 400px;
+    max-width: 400px;
+}
+.sevenScreen_section h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.01em;
+    margin-bottom: 30px;
+    color: var(--light-text-color);
+    text-align: left;
+}
+.sevenScreen_section ul {
+    text-align: left;
+    list-style: none;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.01em;
+    color: var(--light-text-color);
+}
+.sevenScreen_section img{
+    fill: var(--disabled-element-color);
+    width: 23px;
+    height: 23px;
+    float: left;
+}
+.SevenScreen_footer{
+    padding: 20px 0px;
+    width: 1040px;
+}
+.sevenScreen_footer_text{
+    width: 50%;
+    text-align: left;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 171%;
+    letter-spacing: 0.01em;
+    color: var(--second-text-color);
+}
+.SevenScreen_footer_img{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+.SevenScreen_footer_img img{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
