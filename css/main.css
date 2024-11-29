@@ -478,6 +478,7 @@ body{
 }
 .sevenScreen_section{
     max-width: 148px;
+    padding-right: 4px;
 }
 .sevenScreen_section5{
     width: 400px;
@@ -529,4 +530,60 @@ body{
     width: 24px;
     height: 24px;
     margin-right: 10px;
+}
+@media ((max-width: 1375px) and (min-width: 801px)) {
+    .FiveScreen_footer_email label{ 
+        font-size: 22px;
+        line-height: 123%;
+    }
+    .FiveScreen_submit{
+        font-size: 8px;
+        line-height: 100%;
+    } 
+}
+@media ((max-width: 800px) and (min-width: 651px)) {
+    .FirstScreen_footer_card{
+        margin: 0.1%;
+        max-width: 350px;
+    }
+    .FirstScreen_footer_card h3{
+        font-size: 20px;
+        line-height: 123%;
+    }
+    .FirstScreen_footer_card p{
+        font-size: 13px;
+        line-height: 123%;
+    }
+    .FiveScreen_footer_email label{ 
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 113%;
+    }
+    .FiveScreen_submit{
+        font-size: 6px;
+        line-height: 100%;
+    } 
+}
+@media ((max-width: 650px) and (min-width: 150px)) {
+    .FirstScreen_footer_card{
+        margin: 0.1%;
+        max-width: 250px;
+    }
+    .FirstScreen_footer_card h3{
+        font-size: 18px;
+        line-height: 113%;
+    }
+    .FirstScreen_footer_card p{
+        font-size: 12px;
+        line-height: 113%;
+    }
+    .FiveScreen_footer_email label{ 
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+    }
+    .FiveScreen_submit{
+        font-size: 4px;
+        line-height: 100%;
+    } 
 }
