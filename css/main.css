@@ -571,6 +571,11 @@ body{
     .FirstScreen_image{
         opacity: 0.7;
     }
+    .FirstScreen_btn{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 140%;
+    } 
     .btnLearnMore{
         background: rgba(241, 236, 236, 0.95);
     }
@@ -615,6 +620,11 @@ body{
     .FirstScreen_image{
         opacity: 0.5;
     }
+    .FirstScreen_btn{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: auto;
+    }    
     .btnLearnMore{
         background: rgba(241, 236, 236, 0.95);
     }
