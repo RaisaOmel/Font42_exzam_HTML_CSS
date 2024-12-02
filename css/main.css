@@ -152,6 +152,10 @@ body{
     background: var(--light-text-color);
     
 }
+.FirstScreen_footer_card img{
+    height: 48px; 
+    width: auto;
+}
 .FirstScreen_footer_card3{
     box-shadow: 0 13px 19px 0 rgba(0, 0, 0, 0.07);
     background: var(--secondary-color-1);
@@ -539,6 +543,9 @@ body{
     .FirstScreen_footer{
         height: 220px; 
     }
+    .FirstScreen_footer_card{
+        padding: 30px 30px;
+    }
     .FiveScreen_footer_email label{ 
         font-size: 22px;
         line-height: 123%;
@@ -571,8 +578,8 @@ body{
         height: 200px; 
     }
     .FirstScreen_footer_card{
-        margin: 0.1%;
         max-width: 350px;
+        padding: 25px 20px;
     }
     .FirstScreen_footer_card h3{
         font-size: 20px;
@@ -615,8 +622,8 @@ body{
         height: 180px; 
     }
     .FirstScreen_footer_card{
-        margin: 0.1%;
         max-width: 250px;
+        padding: 15px 10px;
     }
     .FirstScreen_footer_card h3{
         font-size: 18px;
