@@ -527,11 +527,17 @@ body{
     margin-right: 10px;
 }
 @media ((max-width: 1375px) and (min-width: 801px)) {
+    .FirstScreen_header{
+        margin-bottom: 60px;
+    }
     .FirstScreen_image{
         opacity: 0.9;
     }
     .btnLearnMore{
         background: rgba(241, 236, 236, 0.95);
+    }
+    .FirstScreen_footer{
+        height: 220px; 
     }
     .FiveScreen_footer_email label{ 
         font-size: 22px;
@@ -552,11 +558,17 @@ body{
     }
 }
 @media ((max-width: 800px) and (min-width: 651px)) {
+    .FirstScreen_header{
+        margin-bottom: 40px;
+    }
     .FirstScreen_image{
         opacity: 0.7;
     }
     .btnLearnMore{
         background: rgba(241, 236, 236, 0.95);
+    }
+    .FirstScreen_footer{
+        height: 200px; 
     }
     .FirstScreen_footer_card{
         margin: 0.1%;
@@ -590,11 +602,17 @@ body{
     }
 }
 @media ((max-width: 650px) and (min-width: 150px)) {
+    .FirstScreen_header{
+        margin-bottom: 20px;
+    }
     .FirstScreen_image{
         opacity: 0.5;
     }
     .btnLearnMore{
         background: rgba(241, 236, 236, 0.95);
+    }
+    .FirstScreen_footer{
+        height: 180px; 
     }
     .FirstScreen_footer_card{
         margin: 0.1%;
